@@ -5,7 +5,7 @@
     --italicFont: 'Bona Nova', serif;
 
     /* Media Queries */
-    --telefono: 480px;
+    --phone: 480px;
     --tablet: 768px;
     --desktop: 1024px;
 
@@ -48,6 +48,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 4rem;
+  margin: var(--separation) 0;
 }
 
 h2 {
@@ -98,17 +99,131 @@ ul {
   margin: 0;
 }
 
-.contenedor {
+.conteiner {
 	width: 95%;
 	max-width: 120REM;
 	margin: 0 auto;
 }
 
-.heading-blanco,
-.heading-blanco span  {
+.heading-white,
+.heading-white span  {
     color: var(--white);
 }
 
-.heading-blanco::after {
+.heading-white::after {
     display: none;
+}
+
+/* ==== header ==== */
+
+.header {
+  position: relative;
+  padding: 5rem 0;
+  min-height: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header::before {
+  content: '';
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.content-header {
+  position: relative;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--separation);
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--separation);
+}
+@media (min-width: 768px) {
+  .bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 20rem;
+    margin: 0 auto 0 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+.navbar-link {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.navbar-link:hover:not(.link-active) {
+  color: var(--secondary)
+}
+
+.link-active {
+  color: var(--secondary);
+}
+
+.text-header {
+  font-size: 4rem;
+}
+
+/* ==== Images of each header  ==== */
+.header-home {
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.header-us {
+  background-image: url(../img/header_nosotros.jpg);
+  background-position: left;
+}
+
+.header-process {
+  background-image: url(../img/header_proceso.jpg);
+  background-position: center;
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
+  background-position: right;
+}
+
+.header-gallery {
+  background-image: url(../img/header_galeria.jpg);
+  background-position: 50%;
+}
+
+.header-contact {
+  background-image: url(../img/header_contacto.jpg);
+  background-position: center;
 }
