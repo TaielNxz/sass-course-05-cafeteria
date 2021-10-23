@@ -641,3 +641,21 @@ ul {
 .process-text p {
   margin: 1rem 0;
 }
+
+/* ==== Menu - Page ==== */
+
+@media (min-width: 768px) {
+  .menu-content {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+    align-items: center;
+  }
+  
+}
+.menu-text p {
+  margin: 0;
+}
+
+.menu-img {
+  margin: 0 auto;
+}
