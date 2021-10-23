@@ -246,6 +246,7 @@ ul {
     padding: 10rem;
     margin-top: -10rem;
     position: relative;
+    width: 90%;
   }
 }
 .about-us p {
@@ -364,12 +365,12 @@ ul {
     linear-gradient( to bottom, var(--primary) 0%, var(--primary) 100% );
   background-position: 
     center 1%,
-    center 91%,
+    center 94%,
     center;
   background-repeat: no-repeat;
   background-size: 200%;
 
-  padding: 15rem 2rem 40rem;
+  padding: 15rem 2rem 30rem;
 }
 
 @media (min-width: 480px) {
@@ -387,7 +388,7 @@ ul {
   .menu {
     background-position: 
     center 1%,
-    center 85%,
+    center 90%,
     center;
 
     background-size: 100%;
@@ -531,6 +532,7 @@ ul {
 
 .footer-box a {
   color: var(--primary);
+  font-size: 2rem;
 }
 
 .copyright {
