@@ -541,3 +541,60 @@ ul {
   padding: 2rem;
   text-align: center;
 }
+
+/* ==== About Us - Page ==== */
+.us {
+  padding: 5rem 2rem;
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .us {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .us-content {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat( 2, 1fr );
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+  }
+}
+
+.us-content p {
+  margin: 2rem 0;
+}
+
+.us-content blockquote {
+  border-left: .5rem solid #5e311e;
+  font-size: 2rem;
+  font-family: var(--italicFont);
+  margin: 0;
+  padding: 1rem;
+}
+
+.us-image {
+  width: 90%;
+  margin: 0 auto;
+
+  border: 3rem solid #fff;
+  box-shadow: 9px 10px 5px -7px rgb(0 0 0 / 35%);
+  transform: rotate(-6deg);
+}
+
+.us-text {
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .us-text {
+    margin: 0;
+  }
+}
