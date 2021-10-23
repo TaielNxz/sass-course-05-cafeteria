@@ -659,3 +659,48 @@ ul {
 .menu-img {
   margin: 0 auto;
 }
+
+/* ==== Contact - Page ==== */
+
+@media (min-width: 768px) {
+  .contact-content {
+    background-image: url(../img/granos_cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 45%;
+  }
+}
+
+.form {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 50%;
+  }
+}
+
+.field {
+  margin-bottom: 2rem;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 1rem;
+  border: .5rem solid var(--primary);
+}
+
+.field .btn {
+  background-color: var(--primary);
+  color:var(--white);
+  font-size: 2.4rem;
+}

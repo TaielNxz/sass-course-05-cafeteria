@@ -35,5 +35,68 @@
             </div>
         </div>
     </header>
+    <main class="main-content conteiner">
+        <h2><span>Reserva tu</span>Mesa</h2>
+
+        <div class="contact-content">
+            <form class="form">
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Tu Nombre">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Tu Email">
+                </div>
+                <div class="field">
+                    <label for="email">Número de Personas:</label>
+                    <select>
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="more">+4</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="hour">Hora:</label>
+                    <input type="time" id="hour" min="09:00" max="18:00">
+                </div>
+
+                
+                <div class="field">
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="field">
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="conteiner footer-content">
+            <div class="footer-box">
+                <h3>Ubicación</h3>
+                <p>Nicolas Copérnico 5990</p>
+                <p>Buenos Aires, Argentina</p>
+            </div>
+            <div class="footer-box">
+                <h3>Reservación</h3>
+                <p>Tel. 3850-9102</p>
+                <a href="tel:+3850-9102">Llamar</a>
+            </div>
+            <div class="footer-box">
+                <h3>Horario</h3>
+                <p>Lun-Jue: 11:00 - 22:00</p>
+                <p>Vie-Sab: 09:00 - 24:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+    </footer>
 </body>
 </html>
