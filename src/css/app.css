@@ -218,39 +218,114 @@ ul {
 }
 
 /* ==== Images of each header  ==== */
-.header-home {
+
+/* ==== .header-home ==== */
+
+.notavif.notweb .header-home {
   background-image: url(../img/header_inicio.jpg);
 }
 
+.webp .header-home {
+  background-image: url(../img/header_inicio.webp);
+}
+
+.avif .header-home {
+  background-image: url(../img/header_inicio.avif);
+}
+
+/* ==== .header-us ==== */
+
 .header-us {
-  background-image: url(../img/header_nosotros.jpg);
   background-position: left;
 }
 
+.notavif.notweb .header-us {
+  background-image: url(../img/header_nosotros.jpg);
+}
+
+.webp .header-us {
+  background-image: url(../img/header_nosotros.webp);
+}
+
+.avif .header-us {
+  background-image: url(../img/header_nosotros.avif);
+}
+
+/* ==== .header-process ==== */
+
 .header-process {
-  background-image: url(../img/header_proceso.jpg);
   background-position: center;
 }
 
+.notavif.notweb .header-process {
+  background-image: url(../img/header_proceso.jpg);
+}
+
+.webp .header-process {
+  background-image: url(../img/header_proceso.webp);
+}
+
+.avif .header-process {
+  background-image: url(../img/header_proceso.avif);
+}
+
+/* ==== .header-menu ==== */
+
 .header-menu {
-  background-image: url(../img/header_menu.jpg);
   background-position: right;
 }
 
+.notavif.notweb .header-menu {
+  background-image: url(../img/header_menu.jpg);
+}
+
+.webp .header-menu {
+  background-image: url(../img/header_menu.webp);
+}
+
+.avif .header-menu {
+  background-image: url(../img/header_menu.avif);
+}
+
+/* ==== .header-gallery ==== */
+
 .header-gallery {
-  background-image: url(../img/header_galeria.jpg);
   background-position: 50%;
 }
 
+.notavif.notweb .header-gallery {
+  background-image: url(../img/header_galeria.jpg);
+}
+
+.webp .header-gallery {
+  background-image: url(../img/header_galeria.webp);
+}
+
+.avif .header-gallery {
+  background-image: url(../img/header_galeria.avif);
+}
+
+/* ==== .header-contact ==== */
+
 .header-contact {
-  background-image: url(../img/header_contacto.jpg);
   background-position: center;
+}
+
+.notavif.notweb .header-contact {
+  background-image: url(../img/header_contacto.jpg);
+}
+
+.webp .header-contact {
+  background-image: url(../img/header_contacto.webp);
+}
+
+.avif .header-contact {
+  background-image: url(../img/header_contacto.avif);
 }
 
 /* ==== homepage ==== */
 
 .homepage {
-
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -366,7 +441,6 @@ ul {
 /* ==== Menu ==== */
 
 .menu {
-
   padding: 15rem 2rem 30rem;
   background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg),
     linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
@@ -377,7 +451,6 @@ ul {
 
 @media (min-width: 480px) {
   .menu {
-
     padding: 20rem 2rem 40rem;
     background-position: center 1%, center 92%, center;
   }
@@ -653,10 +726,20 @@ ul {
 
 @media (min-width: 768px) {
   .contact-content {
-    background-image: url(../img/granos_cafe.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 45%;
+  }
+  .notavif.notweb .contact-content {
+    background-image: url(../img/granos_cafe.jpg);
+  }
+  
+  .webp .contact-content {
+    background-image: url(../img/granos_cafe.webp);
+  }
+  
+  .avif .contact-content {
+    background-image: url(../img/granos_cafe.avif);
   }
 }
 

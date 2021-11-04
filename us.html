@@ -38,7 +38,21 @@
     <main class="conteiner main-content">
         <h2>Conoce más <span>Sobre Nosotros</span></h2>
         <div class="us-content">
-            <img class="us-image" src="img/nosotros_sidebar.jpg" alt="image us">
+            <picture>
+                <source
+                     sizes="1920w" 
+                     srcset="img/nosotros_sidebar.avif 1920w" 
+                     type="image/avif">
+                <source
+                     sizes="1920w" 
+                     srcset="img/nosotros_sidebar.webp 1920w" 
+                     type="image/webp">
+                <source
+                     sizes="1920w" 
+                     srcset="img/nosotros_sidebar.jpg 1920w" 
+                     type="image/jpeg">
+                <img class="us-image" loading="lazy" decoding="async" src="img/nosotros_sidebar.jpg" width="500" height="300" alt="image us">
+            </picture>
             <div class="us-text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at distinctio, ullam cupiditate dolor recusandae, consequuntur sequi inventore, eaque obcaecati magni officia facilis molestias sapiente labore rerum veritatis tenetur soluta!</p>
                 <blockquote cite="us-blockquote">Exelente Sabor!</blockquote>
@@ -67,5 +81,7 @@
         </div>
         <p class="copyright">Todos los derechos reservados. La Cafetería</p>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

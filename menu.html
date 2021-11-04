@@ -43,7 +43,21 @@
                 <p>Maecenas ultricies tortor ut auctor malesuada. Aliquam euismod elit id nisl cursus consectetur. In lacinia nibh nec imperdiet rhoncus. Maecenas et dui sit amet massa rutrum luctus vitae vitae magna. Suspendisse cursus justo ut bibendum mollis. Donec porttitor, risus eget aliquam fringilla, felis lectus luctus risus, et condimentum purus nunc sed nisl. Nunc at enim eleifend, consequat enim in, scelerisque dui. Aenean sit amet ultricies orci, et ultrices libero. Pellentesque pretium egestas dui in sodales. Cras porttitor eros justo, quis vestibulum ante luctus vestibulum.</p>
             </div>
             <div>
-                <img class="menu-img" src="img/cafe.jpg" alt="image coffee">
+                <picture>
+                    <source
+                         sizes="1920w" 
+                         srcset="img/cafe.avif 1920w" 
+                         type="image/avif">
+                    <source
+                         sizes="1920w" 
+                         srcset="img/cafe.webp 1920w" 
+                         type="image/webp">
+                    <source
+                         sizes="1920w" 
+                         srcset="img/cafe.jpg 1920w" 
+                         type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/cafe.jpg" width="500" height="300" alt="image coffee">
+                </picture>
             </div>
         </div>
     </main>
@@ -139,5 +153,7 @@
         </div>
         <p class="copyright">Todos los derechos reservados. La Cafetería</p>
     </footer>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
